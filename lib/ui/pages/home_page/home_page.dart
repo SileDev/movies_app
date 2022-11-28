@@ -136,13 +136,37 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       //Drawer
-      drawer: const Material(
-        borderRadius: BorderRadius.only(
-          topRight: Radius.circular(16),
-          bottomRight: Radius.circular(16),
-        ),
-        child: Padding(
-          padding: EdgeInsets.all(16),
+      drawer: Padding(
+        padding: const EdgeInsets.only(right: 160),
+        child: Material(
+          borderRadius: const BorderRadius.only(
+            topRight: Radius.circular(16),
+            bottomRight: Radius.circular(16),
+          ),
+          child: Padding(
+            padding: const EdgeInsets.all(16),
+            child: Text.rich(
+              style: Theme.of(context).textTheme.bodyMedium,
+              TextSpan(
+                children: [
+                  TextSpan(
+                    text: "Movies App, prueba técnica para ",
+                    style: Theme.of(context).textTheme.bodyMedium,
+                  ),
+                  TextSpan(
+                    text: "Imaginamos",
+                    style: Theme.of(context).textTheme.bodyMedium!.copyWith(
+                          fontWeight: FontWeight.bold,
+                        ),
+                  ),
+                  TextSpan(
+                    text: ".",
+                    style: Theme.of(context).textTheme.bodyMedium,
+                  ),
+                ],
+              ),
+            ),
+          ),
         ),
       ),
       //Body de la página

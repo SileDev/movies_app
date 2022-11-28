@@ -66,14 +66,19 @@ class _SearchPageState extends State<SearchPage> {
                         Expanded(
                           child: Center(
                             child: SizedBox(
-                              height: 24,
+                              height: 32,
                               child: TextField(
                                 autofocus: true,
-                                maxLines: 1,
+                                expands: true,
+                                minLines: null,
+                                maxLines: null,
                                 decoration: const InputDecoration(
                                   hintText: "Search",
                                   border: InputBorder.none,
                                   disabledBorder: null,
+                                  isDense: true,
+                                  contentPadding:
+                                      EdgeInsets.symmetric(vertical: 6),
                                 ),
                                 onChanged: (value) {
                                   //Se evalua que el valor de busqueda no esté vacio

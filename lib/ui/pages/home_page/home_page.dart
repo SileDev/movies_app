@@ -107,13 +107,18 @@ class _HomePageState extends State<HomePage> {
                             const Expanded(
                               child: Center(
                                 child: SizedBox(
-                                  height: 24,
+                                  height: 32,
                                   child: TextField(
                                     enabled: false,
+                                    expands: true,
+                                    minLines: null,
+                                    maxLines: null,
                                     decoration: InputDecoration(
                                       hintText: "Search",
                                       border: InputBorder.none,
                                       disabledBorder: null,
+                                      contentPadding:
+                                          EdgeInsets.symmetric(vertical: 6),
                                     ),
                                   ),
                                 ),

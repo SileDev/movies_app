@@ -39,19 +39,20 @@ class MoviePage extends StatelessWidget {
                     ),
                     SafeArea(
                       child: SizedBox(
-                        height: 64,
+                        height: 72,
                         child: Row(
                           children: [
                             Material(
                               borderRadius: const BorderRadius.only(
-                                bottomRight: Radius.circular(34),
+                                topRight: Radius.circular(36),
+                                bottomRight: Radius.circular(36),
                               ),
                               color: Theme.of(context)
                                   .backgroundColor
                                   .withOpacity(0.8),
                               child: Padding(
                                 padding: const EdgeInsets.only(
-                                    top: 8, right: 16, bottom: 16, left: 8),
+                                    top: 16, right: 12, bottom: 16, left: 16),
                                 child: IconButton(
                                   onPressed: () {
                                     Get.back();

@@ -17,7 +17,7 @@ ThemeData lightTheme = ThemeData(
   elevatedButtonTheme: ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(14),
+        borderRadius: BorderRadius.circular(32),
       ),
       foregroundColor: const Color(0xffefefef),
       //En el diseño el botón no tiene sombra

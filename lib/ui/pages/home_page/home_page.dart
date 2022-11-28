@@ -152,6 +152,7 @@ class _HomePageState extends State<HomePage> {
             color: Get.theme.scaffoldBackgroundColor,
             clipBehavior: Clip.antiAlias,
             child: SingleChildScrollView(
+              physics: const BouncingScrollPhysics(),
               padding: const EdgeInsets.only(top: 16),
               child: Column(
                 children: const [

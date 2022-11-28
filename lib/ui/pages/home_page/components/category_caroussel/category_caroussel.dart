@@ -62,6 +62,7 @@ class _CategoryCarousselState extends State<CategoryCaroussel> {
                     () => CategoryPage(
                       categoryName: widget.label,
                       pageContent: SingleChildScrollView(
+                        physics: const BouncingScrollPhysics(),
                         padding: const EdgeInsets.symmetric(
                           horizontal: 8,
                           vertical: 16,

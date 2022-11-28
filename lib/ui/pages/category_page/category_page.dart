@@ -13,38 +13,40 @@ class CategoryPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          Row(
-            children: [
-              Padding(
-                padding: const EdgeInsets.all(8),
-                child: IconButton(
-                  onPressed: () {
-                    Get.back();
-                  },
-                  icon: const Icon(
-                    Icons.close_rounded,
+      body: SafeArea(
+        child: Column(
+          children: [
+            Row(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(8),
+                  child: IconButton(
+                    onPressed: () {
+                      Get.back();
+                    },
+                    icon: const Icon(
+                      Icons.close_rounded,
+                    ),
                   ),
                 ),
-              ),
-              Expanded(
-                child: Hero(
-                  tag: categoryName,
-                  child: Text(
-                    categoryName.toUpperCase(),
-                    style: Get.theme.textTheme.titleMedium,
+                Expanded(
+                  child: Hero(
+                    tag: categoryName,
+                    child: Text(
+                      categoryName.toUpperCase(),
+                      style: Get.theme.textTheme.titleMedium,
+                    ),
                   ),
                 ),
-              ),
-            ],
-          ),
+              ],
+            ),
 
-          /**/
-          Expanded(
-            child: pageContent,
-          ),
-        ],
+            /**/
+            Expanded(
+              child: pageContent,
+            ),
+          ],
+        ),
       ),
     );
   }

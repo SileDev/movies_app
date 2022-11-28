@@ -37,31 +37,33 @@ class MoviePage extends StatelessWidget {
                       height: double.infinity,
                       fit: BoxFit.cover,
                     ),
-                    SizedBox(
-                      height: 64,
-                      child: Row(
-                        children: [
-                          Material(
-                            borderRadius: const BorderRadius.only(
-                              bottomRight: Radius.circular(34),
-                            ),
-                            color: Theme.of(context)
-                                .backgroundColor
-                                .withOpacity(0.8),
-                            child: Padding(
-                              padding: const EdgeInsets.only(
-                                  top: 8, right: 16, bottom: 16, left: 8),
-                              child: IconButton(
-                                onPressed: () {
-                                  Get.back();
-                                },
-                                icon: const Icon(
-                                  Icons.close_rounded,
+                    SafeArea(
+                      child: SizedBox(
+                        height: 64,
+                        child: Row(
+                          children: [
+                            Material(
+                              borderRadius: const BorderRadius.only(
+                                bottomRight: Radius.circular(34),
+                              ),
+                              color: Theme.of(context)
+                                  .backgroundColor
+                                  .withOpacity(0.8),
+                              child: Padding(
+                                padding: const EdgeInsets.only(
+                                    top: 8, right: 16, bottom: 16, left: 8),
+                                child: IconButton(
+                                  onPressed: () {
+                                    Get.back();
+                                  },
+                                  icon: const Icon(
+                                    Icons.close_rounded,
+                                  ),
                                 ),
                               ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
                     )
                   ],
